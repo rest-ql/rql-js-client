@@ -1,17 +1,19 @@
 {
-    "name": "rql-js-client",
-    "version": "0.0.0",
-    "homepage": "https://github.com/rest-ql/rql-js-client",
-    "authors": [
-        "Alexandr Gureev <oleksandr.gureiev@gmail.com>"
-    ],
-    "main": "rql.js",
-    "license": "MIT",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ]
+  "name": "rql-js-client",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rest-ql/rql-js-client",
+  "authors": [
+    "Alexandr Gureev <oleksandr.gureiev@gmail.com>"
+  ],
+  "main": [
+    "js/rql.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
