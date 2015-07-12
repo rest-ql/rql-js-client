@@ -6,7 +6,7 @@
     "Alexandr Gureev <oleksandr.gureiev@gmail.com>"
   ],
   "main": [
-    "./rql.js"
+    "./dist/rql.js"
   ],
   "license": "MIT",
   "ignore": [

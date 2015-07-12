@@ -1,4 +1,4 @@
-TARGET=rql.js
+TARGET=dist/rql.js
 SRC_FILES=$(shell find src -type f -name "*.js")
 
 BUILD_OPTIONS=build/build.js

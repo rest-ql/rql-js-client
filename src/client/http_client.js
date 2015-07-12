@@ -58,5 +58,5 @@
         };
     };
 
-    return ClientInterface;
+    module.exports = ClientInterface;
 });
