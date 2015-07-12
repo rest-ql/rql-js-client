@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    var Q = require("Q"),
+    var Q = require("../../vendor/q"),
         ClientInterface = {
             getClient: function() {
                 return new HttpClient();

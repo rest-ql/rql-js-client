@@ -1,5 +1,5 @@
 // wrap-end.frag.js
 
 // change "my-lib" to your 'entry-point' module name
-return require('./src/rql.js');
+return require('rql');
 }));

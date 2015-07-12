@@ -1,5 +1,5 @@
 ({
-    include: ["../vendor/almond"],
+    include: ["./rql", "../vendor/almond", "../vendor/q"],
     optimize: "none",
     baseUrl: "../src",
     cjsTranslate: true,
