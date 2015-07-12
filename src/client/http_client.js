@@ -1,11 +1,12 @@
-define(["q"], function (Q) {
+(function () {
     "use strict";
 
-    var ClientInterface = {
-        getClient: function() {
-            return new HttpClient();
-        }
-    };
+    var Q = require("Q"),
+        ClientInterface = {
+            getClient: function() {
+                return new HttpClient();
+            }
+        };
 
     function HttpClient () {
         function send () {
