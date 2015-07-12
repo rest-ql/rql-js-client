@@ -2494,12 +2494,7 @@ return Q;
 define('client/http_client.js',['require','exports','module','../../vendor/q'],function (require, exports, module) {(function () {
     "use strict";
 
-    var Q = require("../../vendor/q"),
-        ClientInterface = {
-            getClient: function() {
-                return new HttpClient();
-            }
-        };
+    var Q = require("../../vendor/q");
 
     function HttpClient () {
         function send () {
@@ -2551,7 +2546,7 @@ define('client/http_client.js',['require','exports','module','../../vendor/q'],f
         };
     };
 
-    module.exports = ClientInterface;
+    module.exports = new HttpClient();
 });
 });
 
@@ -2560,8 +2555,7 @@ define('client/factory.js',['require','exports','module','./http_client.js'],fun
 
     var clientFactory = {
         getHttpClient: function() {
-            var clientInterface = require('./http_client.js');
-            return clientInterface.getClient();
+            return require('./http_client.js')
         }
     };
 
@@ -2571,12 +2565,11 @@ define('client/factory.js',['require','exports','module','./http_client.js'],fun
 
 define('rql',['require','exports','module','./client/factory.js'],function (require, exports, module) {(function () {
     "use strict";
-    var clientFactory = require('./client/factory.js');
-
-    console.log(clientFactory);
 
     var RQL = {
-        getClientFactory: clientFactory
+        getClientFactory: function() {
+            return require('./client/factory.js');
+        }
     };
 
     module.exports = RQL;

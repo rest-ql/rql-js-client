@@ -1,12 +1,7 @@
 (function () {
     "use strict";
 
-    var Q = require("../../vendor/q"),
-        ClientInterface = {
-            getClient: function() {
-                return new HttpClient();
-            }
-        };
+    var Q = require("../../vendor/q");
 
     function HttpClient () {
         function send () {
@@ -58,5 +53,5 @@
         };
     };
 
-    module.exports = ClientInterface;
+    module.exports = new HttpClient();
 });

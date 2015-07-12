@@ -1,11 +1,10 @@
 (function () {
     "use strict";
-    var clientFactory = require('./client/factory.js');
-
-    console.log(clientFactory);
 
     var RQL = {
-        getClientFactory: clientFactory
+        getClientFactory: function() {
+            return require('./client/factory.js');
+        }
     };
 
     module.exports = RQL;
